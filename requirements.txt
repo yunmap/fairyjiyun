@@ -1,0 +1,4 @@
+django-micro
+cognitive_face
+pillow
+uwsgi
