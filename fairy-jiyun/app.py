@@ -8,11 +8,13 @@ from forms import VerifyForm
 import cognitive_face as CF
 
 DEBUG = True
-SUBSCRIPTION_KEY = os.environ.get('SUBSCRIPTION_KEY')
-COGNITIVE_FACE_REGION = os.environ.get('COGNITIVE_FACE_REGION', 'eastasia')
+#SUBSCRIPTION_KEY = os.environ.get('SUBSCRIPTION_KEY')
+SUBSCRIPTION_KEY = '422e22b5703d44c0a0dc19c35fd51c9f'
+COGNITIVE_FACE_REGION = 'eastus'
+#COGNITIVE_FACE_REGION = os.environ.get('COGNITIVE_FACE_REGION', 'eastus')
 
 CF.Key.set(SUBSCRIPTION_KEY)
-CF.BaseUrl.set('https://{}.api.cognitive.microsoft.com/face/v1.0/'.format(COGNITIVE_FACE_REGION))
+CF.BaseUrl.set('https://eastus.api.cognitive.microsoft.com/face/v1.0')
 
 configure(locals())
 
